@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Score vs Hours of study</title>
+    </head>
+    <body style="background:#d4a3ae;">
+        <center>
+        <div class="login">
+            <h1 style="color:#000;">Score prediction on the basis of No. of hours studied</h1>
+            <form action="{{url_for('predict')}}"method="post">
+                <b>Hours: <input style="height:40px;width:150px" type="text" name="Hours" placeholder="No. of Hours" required="required" /><br><br><p>
+                </b>
+
+                <button style="height:40px;width:100px" type="submit" class="btn btn-primary btn-block btn-large">Predict</button></p>
+            </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 style="color:#000;">
+            {{prediction_text}}</h3>
+            </center>
+        </div>
+    </body>
+</html>
